@@ -11,16 +11,16 @@
   body {
 
    overflow-x: hidden;
+   overflow-y: scroll;
     
     background-color: black;
     color: white;
-  
+   min-height: 100vh;
   
   }
-  .cont{
-    width: 100%;
-    overflow-x: auto;
-  }
+  
+
+  
 
 nav {
    
@@ -156,9 +156,7 @@ content: "/";
    
   }
   @media all and (min-width: 720px){
-    body{
-      overflow: hidden;
-    }
+    
     .para p{
      padding-left: 40px;
      padding-right:40px ;
@@ -336,7 +334,7 @@ content: "/";
   
 }
 .para h6{
-  padding: 0px 26px 0px;
+  padding: 0px 26px 20px;
 }
 
 .student{
