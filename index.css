@@ -92,7 +92,7 @@ nav {
   color: orange;
   position: absolute;
   width: 100%;
-  padding: 0px 20px 0px;
+  padding: 29px 20px 0px;
   animation: moveTextX 4.5s linear infinite;
   white-space: nowrap; /* Prevent text from wrapping */
 }
