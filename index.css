@@ -80,45 +80,21 @@ nav {
   margin-left: 5vw;
 }
 
-.text-container {
+.text-wrapper {
   position: relative;
-  overflow: hidden; /* Hide overflowing content */
+  height: 50px; /* Adjust based on text height */
+  overflow: hidden;
+  width: 100%; /* Ensure it takes the full width */
 }
 
-.text-container span {
+.moving-text {
+  font-size: 22px;
+  color: orange;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Adjust transition duration as needed */
-}
-
-.text1 {
-  animation: fadeInOut 1s infinite;
-  animation-delay: 1s;
-}
-
-.text2 {
-  animation: fadeInOut 2s infinite;
-  animation-delay: 2s;
-}
-
-.text3 {
-  animation: fadeInOut 4s infinite;
-  animation-delay: 3s;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  width: 100%;
+  padding: 0px 20px 0px;
+  animation: moveTextX 4.5s linear infinite;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .para h6 {
