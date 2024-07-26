@@ -80,29 +80,45 @@ nav {
   margin-left: 5vw;
 }
 
-.container {
-  width: 100%;
-}
-.para {
-  width: 100%;
-}
-.text-wrapper {
+.text-container {
   position: relative;
-  height: 50px; /* Adjust based on text height */
-  overflow: hidden;
-  width: 400px;
+  overflow: hidden; /* Hide overflowing content */
 }
 
-.moving-text {
-  font-size: 24px;
-  color: orange;
+.text-container span {
   position: absolute;
-  width: 100%;
-  white-space: nowrap; /* Prevent text from wrapping */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
-  transform: translateX(-50%);
-  transition: opacity 0.5s, transform 0.5s;
-  transition-delay: 1s;
+  transition: opacity 1s ease-in-out; /* Adjust transition duration as needed */
+}
+
+.text1 {
+  animation: fadeInOut 1s infinite;
+  animation-delay: 1s;
+}
+
+.text2 {
+  animation: fadeInOut 2s infinite;
+  animation-delay: 2s;
+}
+
+.text3 {
+  animation: fadeInOut 4s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .para h6 {
