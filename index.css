@@ -10,8 +10,8 @@
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: black;
 
+  background-color: black;
   color: white;
   min-height: 100vh;
 }
@@ -70,55 +70,7 @@ nav {
 .word-divider::before {
   content: "/";
 }
-.wroper {
-  position: relative;
-  height: 50px;
-  overflow: hidden;
-}
-.moving {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  width: 100%;
-  padding: 20px 20px 10px;
-  color: orange;
-  position: absolute;
-  animation: moveText 9s linear infinite;
-}
 
-.moving:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.moving:nth-child(2) {
-  animation-delay: 3s;
-}
-
-.moving:nth-child(3) {
-  animation-delay: 6s;
-}
-
-@keyframes moveText {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  30% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  40% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
 .circle {
   width: 8vw;
   height: 8vw;
@@ -134,7 +86,12 @@ nav {
 .para {
   width: 100%;
 }
-
+.para h1 {
+  padding: 20px 20px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 20px;
+}
 .para h6 {
   padding: 20px 20px 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -335,11 +292,11 @@ nav {
     align-items: end;
   }
   .para p {
-    width: 35em;
+    width: 30em;
 
     font-size: 19px;
   }
-  .moving {
+  .para h1 {
     padding: 0px 20px 20px;
   }
   .para h6 {
